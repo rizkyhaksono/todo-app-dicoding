@@ -8,6 +8,7 @@
  *    }
  * ]
  */
+
 const todos = [];
 const RENDER_EVENT = "render-todo";
 const SAVED_EVENT = "saved-todo";
@@ -82,6 +83,8 @@ function loadDataFromStorage() {
       todos.push(todo);
     }
   }
+
+  console.log("test");
 
   document.dispatchEvent(new Event(RENDER_EVENT));
 }
